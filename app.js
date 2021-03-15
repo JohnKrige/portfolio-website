@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const { validationResult } = require('express-validator');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const { nameVerification, emailVerification, messageVerification } = require('./validators');
 const sendEmail = require('./email');
@@ -42,7 +43,7 @@ async (req, res) => {
 let port = process.env.PORT;
 
 if (port == null || port === '') {
-  port = 3000;
+  port = 3500;
 }
 app.listen(port, () => {
   console.log('And we are live');
