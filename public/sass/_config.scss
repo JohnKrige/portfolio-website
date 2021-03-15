@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto&display=swap');
+
+$logofont: 'Racing Sans One', cursive;
+$mainFont:'Roboto', sans-serif;
+$primary-color: #2A68B1;
+$dark-text-color: #282828;
+$dark-background: #626262;
+$light-background: #E5E5E5;
+
+@mixin button ($padding: 10px, $color: $primary-color) {
+    padding: $padding;
+    background-color: $color;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+}
+
+@mixin page ($color){
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: $color;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@mixin page-title ($color){
+    color: $color;
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid $color;
+    justify-self: flex-start;
+    font-size: 36px;
+    border-radius: 0;
+}
+
+@mixin gradient-background{
+    background: rgb(98,98,98);
+    background: -moz-linear-gradient(180deg, rgba(98,98,98,1) 0%, rgba(171,171,171,1) 50%, rgba(98,98,98,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(98,98,98,1) 0%, rgba(171,171,171,1) 50%, rgba(98,98,98,1) 100%);
+    background: linear-gradient(180deg, rgba(98,98,98,1) 0%, rgba(171,171,171,1) 50%, rgba(98,98,98,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#626262",endColorstr="#626262",GradientType=1);
+}
+
+@mixin flex ($direction: row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin borderRadius{
+    border-radius: 5px;
+}
