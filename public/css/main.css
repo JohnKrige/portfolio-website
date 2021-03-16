@@ -227,6 +227,7 @@ body {
   flex-direction: column;
   max-width: 700px;
   margin-bottom: 40px;
+  border-radius: 5px;
 }
 
 .project-tile__image {
@@ -416,6 +417,8 @@ body {
 
 .contact-form__input {
   border-radius: 0;
+  padding: 5px 0;
+  font-size: 18px;
 }
 
 .contact-form__submit-container {
@@ -447,6 +450,10 @@ body {
 
 .contact-form__input--name {
   max-width: 300px;
+}
+
+.contact-form__input--message {
+  max-width: 800px;
 }
 
 .contact-form__error {
@@ -613,6 +620,13 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .nav__item {
+    margin: 80px;
+    font-size: 24px;
+  }
+  .logo {
+    font-size: 46px;
+  }
   .landing-page-content {
     align-items: center;
     justify-content: space-between;
@@ -628,7 +642,7 @@ body {
     justify-self: end;
   }
   .poster__title {
-    font-size: 54px;
+    font-size: 72px;
   }
   .poster__text {
     grid-area: txt;
@@ -641,10 +655,11 @@ body {
     margin: 0;
   }
   .poster__image-border {
-    width: 300px;
+    width: 350px;
   }
   .project-tile {
     flex-direction: row;
+    min-width: 900px;
   }
   .project-tile__image {
     min-width: 300px;

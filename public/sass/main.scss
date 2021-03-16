@@ -181,6 +181,7 @@ body{
     flex-direction: column;
     max-width: 700px;
     margin-bottom: 40px;
+    border-radius: 5px;
 
     &__image{
         width: 100%;
@@ -334,6 +335,8 @@ body{
     
     &__input{
         border-radius: 0;
+        padding: 5px 0;
+        font-size: 18px;
     }
     
     &__submit-container{
@@ -358,6 +361,10 @@ body{
 
     &__input--name{
         max-width: 300px;
+    }
+
+    &__input--message{
+        max-width: 800px;
     }
 
     &__error{
@@ -536,6 +543,17 @@ body{
 }
 
 @media (min-width: 1280px) {
+    .nav{
+        &__item{
+            margin: 80px;
+            font-size: 24px;
+        }
+    }
+
+    .logo{
+        font-size: 46px;
+    }
+
     .landing-page-content{
         align-items: center;
         justify-content: space-between;
@@ -554,7 +572,7 @@ body{
         }
 
         &__title{
-            font-size: 54px;
+            font-size: 72px;
         }
 
         &__text{
@@ -570,12 +588,13 @@ body{
         }
 
         &__image-border{
-            width: 300px;
+            width: 350px;
         }
     }
 
     .project-tile{
         flex-direction: row;
+        min-width: 900px;
 
         &__image{
             min-width: 300px;
@@ -589,10 +608,6 @@ body{
             margin-left: 40px;
         }
     }
-
-
-
-
 }
 
 
